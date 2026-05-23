@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Khawaja Zeeshan Ijaz - BSIT student at University of Education Lahore, Amazon Dropshipping expert, SEO specialist, and aspiring software developer." />
+  <title>Khawaja Zeeshan Ijaz – Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom Design CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="splashScreen" class="splash-screen">
+    <div class="splash-content">
+      <div class="splash-logo">
+        <div class="splash-mark">
+          <span class="bar top"></span>
+          <span class="bar diagonal"></span>
+          <span class="bar bottom"></span>
+          <span class="mark-i"></span>
+        </div>
+      </div>
+      <p>Khawaja Zeeshan Ijaz</p>
+    </div>
+  </div>
+
+  <!-- Responsive Mobile Top Bar -->
+  <header class="mobile-header">
+    <h2 class="brand-name">Zeeshan <span>Ijaz</span></h2>
+    <button id="mobileThemeBtn" type="button" class="btn theme-toggle mobile-theme-btn">Light Mode</button>
+    <button class="hamburger-btn" id="toggleBtn" aria-label="Toggle Navigation Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Desktop Top Navigation -->
+  <header class="desktop-header">
+    <div class="desktop-brand">
+      <h1>Zeeshan <span>Ijaz</span></h1>
+    </div>
+      <nav class="desktop-nav" aria-label="Primary desktop navigation">
+        <button onclick="showSection('hero')" class="nav-btn active" id="desktop-btn-hero">Home</button>
+        <button onclick="showSection('about')" class="nav-btn" id="desktop-btn-about">About</button>
+        <button onclick="showSection('skills')" class="nav-btn" id="desktop-btn-skills">Skills</button>
+        <button onclick="showSection('education')" class="nav-btn" id="desktop-btn-education">Education</button>
+        <button onclick="showSection('experience')" class="nav-btn" id="desktop-btn-experience">Experience</button>
+        <button onclick="showSection('projects')" class="nav-btn" id="desktop-btn-projects">Projects</button>
+        <button onclick="showSection('resume')" class="nav-btn" id="desktop-btn-resume">Resume</button>
+        <button onclick="showSection('contact')" class="nav-btn" id="desktop-btn-contact">Contact</button>
+    </nav>
+      <div class="desktop-actions">
+        <button id="desktopThemeBtn" type="button" class="btn theme-toggle">Light Mode</button>
+      </div>
+  </header>
+
+  <!-- Sidebar Panel Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <h2 class="brand-name">Zeeshan <span>Ijaz</span></h2>
+      <button id="sidebarCloseBtn" class="sidebar-toggle-btn" aria-label="Close sidebar menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="theme-switcher">
+      <button id="themeToggleBtn" type="button" class="btn theme-toggle">Light Mode</button>
+    </div>
+    
+      <nav aria-label="Primary sidebar navigation">
+      <ul>
+        <li>
+          <button onclick="showSection('hero')" class="nav-btn active" id="btn-hero">
+            <i class="fas fa-home"></i> Home
+          </button>
+        </li>
+        <li>
+          <button onclick="showSection('about')" class="nav-btn" id="btn-about">
+            <i class="fas fa-user"></i> About
+          </button>
+        </li>
+        <li>
+          <button onclick="showSection('skills')" class="nav-btn" id="btn-skills">
+            <i class="fas fa-cogs"></i> Skills
+          </button>
+        </li>
+        <li>
+          <button onclick="showSection('education')" class="nav-btn" id="btn-education">
+            <i class="fas fa-graduation-cap"></i> Education
+          </button>
+        </li>
+        <li>
+          <button onclick="showSection('experience')" class="nav-btn" id="btn-experience">
+            <i class="fas fa-briefcase"></i> Experience
+          </button>
+        </li>
+        <li>
+          <button onclick="showSection('projects')" class="nav-btn" id="btn-projects">
+            <i class="fas fa-project-diagram"></i> Projects
+          </button>
+        </li>
+        <li>
+          <button onclick="showSection('resume')" class="nav-btn" id="btn-resume">
+            <i class="fas fa-file-alt"></i> Resume
+          </button>
+        </li>
+        <li>
+          <button onclick="showSection('contact')" class="nav-btn" id="btn-contact">
+            <i class="fas fa-envelope"></i> Contact
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/kh.zeeshan12345/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/Kh_zeeshan._.0" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/zeeshan-ijaz2" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <button id="sidebarOpenBtn" class="sidebar-open-btn" aria-label="Open sidebar menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Main Viewports Frame -->
+  <div class="main-wrapper">
+    
+    <!-- Hero Section -->
+    <main class="hero content-section active layout-flex" id="hero">
+      <div class="hero-text">
+        <p class="hero-greeting">I'm</p>
+        <h1 class="hero-name">
+          <span class="name-line">Khawaja</span>
+          <span class="name-line name-accent">Zeeshan Ijaz</span>
+        </h1>
+        <h2 class="hero-subtitle"><span class="typed-text">BSIT Student</span></h2>
+        <p class="hero-bio">
+          I build seamless digital experiences with a focus on technical precision and e-commerce excellence. Passionate about turning complex logic into elegant software solutions and scalable online businesses.
+        </p>
+        <div class="hero-buttons">
+          <button onclick="showSection('projects')" class="btn primary" id="hero-view-projects-btn">
+            View Projects
+          </button>
+          <button onclick="showSection('contact')" class="btn secondary" id="hero-contact-btn">Contact Me</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="hero-img-frame">
+            <img src="zee.png" alt="Khawaja Zeeshan Ijaz Portrait" />
+        </div>
+      </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p class="section-subtitle">A brief overview of my professional background, goals, and credentials.</p>
+      
+      <div class="about-container">
+        <div class="about-bio">
+          <p>
+            Hello! I'm <strong>Khawaja Zeeshan Ijaz</strong>, a passionate technologist and digital entrepreneur based in Lahore, Pakistan. I'm currently pursuing a <strong>BSIT (Post ADP IT)</strong> at the University of Education, Lahore (5th Semester, 2025) — building on my ADP in Computer Science from Minhaj University.
+          </p>
+          <p>
+            I run my own <strong>Amazon FBM Dropshipping</strong> business focused on eco-friendly products, and have professional experience as an Account Manager at Ecomwhizz. I also bring solid <strong>SEO expertise</strong> — from backlink building and link campaigns to content marketing and guest posting.
+          </p>
+          <p>
+            My programming expertise spans C/C++, Python, Java, Web Development, and Machine Learning fundamentals. I aim to become a professional software developer and digital entrepreneur — combining technical mastery with business acumen.
+          </p>
+        </div>
+        
+        <div class="about-details-card">
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fas fa-user"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Name</span>
+              <span class="detail-val">Zeeshan Ijaz</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fas fa-signature"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Father's Name</span>
+              <span class="detail-val">Khawaja Muhammad Ijaz</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fas fa-id-card"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">CNIC</span>
+              <span class="detail-val">35202-XXXXXXX-X (Lahore)</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Current Address</span>
+              <span class="detail-val">House No. 193 Block 6 A2, Township, Lahore</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon"><i class="fas fa-home"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Permanent Address</span>
+              <span class="detail-val">Muzaffarabad, Azad Kashmir</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section">
+      <h2>Technical Skills</h2>
+      <p class="section-subtitle">My competency ratings across programming, e-commerce, mobile development, and digital marketing.</p>
+      
+      <div class="skills-grid">
+        <!-- Programming Languages & Logic -->
+        <div class="skill-category-card">
+          <h3><i class="fas fa-code"></i> Languages & Databases</h3>
+          <ul class="skills-list">
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">C / C++</span>
+                <span class="skill-perc">90%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-90"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML5 / CSS3</span>
+                <span class="skill-perc">85%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-85"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">SQL / Relational Databases</span>
+                <span class="skill-perc">80%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-80"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Basic Python & ML Math</span>
+                <span class="skill-perc">80%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-80"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- E-Commerce & Logistics -->
+        <div class="skill-category-card">
+          <h3><i class="fas fa-shopping-cart"></i> E-Commerce Specialist</h3>
+          <ul class="skills-list">
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Amazon Seller Central Operations</span>
+                <span class="skill-perc">95%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-95"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Product Hunting & Supplier Sourcing</span>
+                <span class="skill-perc">90%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-90"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Listing Optimization & SEO</span>
+                <span class="skill-perc">85%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-85"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Applications & Frameworks -->
+        <div class="skill-category-card">
+          <h3><i class="fas fa-mobile-alt"></i> Mobile & Infrastructure</h3>
+          <ul class="skills-list">
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Android Studio (Java Core)</span>
+                <span class="skill-perc">85%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-85"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git & Command-Line Tools</span>
+                <span class="skill-perc">75%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-75"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Algorithm Optimization</span>
+                <span class="skill-perc">75%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-75"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SEO & Digital Marketing -->
+        <div class="skill-category-card">
+          <h3><i class="fas fa-search"></i> SEO &amp; Digital Marketing</h3>
+          <ul class="skills-list">
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Off-Page SEO &amp; Backlink Building</span>
+                <span class="skill-perc">88%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-88"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Content Marketing &amp; Guest Posting</span>
+                <span class="skill-perc">82%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-82"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Google Rankings &amp; SERP Strategy</span>
+                <span class="skill-perc">80%</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-fill width-80"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section with Integrated ML Calculators -->
+    <section id="projects" class="content-section">
+      <h2>Project Portfolio</h2>
+      <p class="section-subtitle projects-intro">A selection of my primary software architectures, mobile apps, and visual data models.</p>
+      
+      <!-- Project 1: Android Game -->
+      <div class="project-card">
+        <div class="project-details">
+          <div class="project-meta">
+            <span class="badge info">Android App</span>
+            <span class="badge">Java Core</span>
+          </div>
+          <h3>Tic Tac Toe (Tournament Mode)</h3>
+          <p>
+            An advanced Android gaming application built with native Java. Features include an algorithmic computer difficulty setting, multiple round tournament modes, complete user score tracking, responsive button animations, and custom action rollbacks.
+          </p>
+          <a href="https://drive.google.com/file/d/1Uh-jtKkS4Kdsdv6QXoyoiCGxqOv-XTAo/view?usp=sharing" class="btn primary" target="_blank" rel="noopener">
+            <i class="fas fa-download"></i> Download APK <i class="fas fa-external-link-alt external-icon"></i>
+          </a>
+          <div class="project-actions">
+            <a href="#" class="btn secondary" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="btn primary" target="_blank">
+              <i class="fas fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+        <div class="ml-simulator-wrapper project-preview-centered">
+          <i class="fas fa-gamepad project-icon-big"></i>
+          <span class="project-card-summary">Native Android Game Demo</span>
+          <span class="project-card-note">Featuring full UI animations, scoreboard, and adaptive difficulty.</span>
+          <span class="badge">Verified Release</span>
+        </div>
+      </div>
+
+      <!-- Project 2: Salary Regression Calculator -->
+      <div class="project-card">
+        <div class="project-details">
+          <div class="project-meta">
+            <span class="badge success">Machine Learning</span>
+            <span class="badge">Linear Regression</span>
+            <span class="badge">Python Math</span>
+          </div>
+          <h3>Salary Estimator Model</h3>
+          <p>
+            A statistical prediction system implementing high-precision Linear Regression mathematical fits. Standardized using empirical dataset entries, this model outputs expected market compensation relative to experience values. 
+          </p>
+          <a href="salary data.py" class="btn secondary" download>
+            <i class="fas fa-code"></i> Download Python Script
+          </a>
+          <div class="project-actions">
+            <a href="#" class="btn secondary" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="btn primary" target="_blank">
+              <i class="fas fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+        
+        <!-- Interactive Regression Calculator -->
+        <div class="ml-simulator-wrapper">
+          <div class="ml-simulator-header">
+            <i class="fas fa-chart-line"></i> Real-Time Predictor Sandbox
+          </div>
+          <div class="slider-group">
+            <div class="slider-labels">
+              <label for="experience-slider">Experience Input:</label>
+              <span class="slider-val" id="exp-val">5.0 Years</span>
+            </div>
+            <input type="range" min="0" max="20" step="0.5" value="5.0" class="custom-range-slider" id="experience-slider" />
+          </div>
+          <div class="simulation-output-box">
+            <div class="output-label">Predicted Salary (USD)</div>
+            <div class="output-value" id="salary-output">$73,042</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Diabetes Classifier Calculator -->
+      <div class="project-card">
+        <div class="project-details">
+          <div class="project-meta">
+            <span class="badge success">Machine Learning</span>
+            <span class="badge">Logistic Regression</span>
+            <span class="badge">StandardScaler</span>
+          </div>
+          <h3>Clinical Diabetes Risk Predictor</h3>
+          <p>
+            An advanced binary classification engine trained using comprehensive clinical diagnostic attributes. Operates with scaled parameters and fitted weights to estimate probability thresholds.
+          </p>
+          <a href="diabetes.py" class="btn secondary" download>
+            <i class="fas fa-code"></i> Download Python Script
+          </a>
+          <div class="project-actions">
+            <a href="#" class="btn secondary" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="btn primary" target="_blank">
+              <i class="fas fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Diabetes Classifier -->
+        <div class="ml-simulator-wrapper">
+          <div class="ml-simulator-header">
+            <i class="fas fa-heartbeat"></i> Real-Time Risk Simulator
+          </div>
+          <form id="diabetes-form" onsubmit="event.preventDefault();">
+            <div class="grid-form-group">
+              <div class="form-item">
+                <label for="input-glucose">Glucose (mg/dL)</label>
+                <input type="number" id="input-glucose" min="0" max="300" value="120" />
+              </div>
+              <div class="form-item">
+                <label for="input-bmi">BMI (Body Mass Index)</label>
+                <input type="number" id="input-bmi" step="0.1" min="0" max="70" value="32.0" />
+              </div>
+              <div class="form-item">
+                <label for="input-age">Age (Years)</label>
+                <input type="number" id="input-age" min="1" max="120" value="33" />
+              </div>
+              <div class="form-item">
+                <label for="input-pregnancies">Pregnancies</label>
+                <input type="number" id="input-pregnancies" min="0" max="20" value="3" />
+              </div>
+              <div class="form-item">
+                <label for="input-insulin">Insulin (mu U/ml)</label>
+                <input type="number" id="input-insulin" min="0" max="900" value="80" />
+              </div>
+              <div class="form-item">
+                <label for="input-dpf">Pedigree Value</label>
+                <input type="number" id="input-dpf" step="0.001" min="0" max="3.0" value="0.472" />
+              </div>
+              <div class="form-item grid-span-2">
+                <button type="button" class="btn primary full-width-action" onclick="calculateDiabetesRisk()">
+                  <i class="fas fa-redo"></i> Compute Clinical Risk Assessment
+                </button>
+              </div>
+            </div>
+          </form>
+          
+          <div class="classification-result-container">
+            <div class="gauge-section">
+              <div class="gauge-metrics">
+                <span class="output-label">Statistical Likelihood</span>
+                <span class="risk-level-tag mod" id="risk-tier">Moderate Risk</span>
+              </div>
+              <div class="probability-bar-track">
+                <div class="probability-bar-fill" id="prob-bar"></div>
+              </div>
+              <div class="gauge-metrics mt-4">
+                <span class="output-label" id="prob-val">29.6% Risk</span>
+                <span class="output-label">Logistic Regression Sigmoid</span>
+              </div>
+            </div>
+            <div class="recommendations-box" id="risk-advice">
+              Values fall within standard normal deviations. Keep monitoring and continue regular workouts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="content-section">
+      <h2>Education</h2>
+      <p class="section-subtitle">My academic journey — from matriculation to my current BSIT degree.</p>
+
+      <div class="timeline">
+
+        <!-- BSIT -->
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-university"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="badge info">Current</span>
+              <span class="timeline-date">2025 – Present</span>
+            </div>
+            <h3>BSIT – Bachelor of Science in Information Technology <span class="edu-note">(Post ADP IT)</span></h3>
+            <p class="timeline-institution"><i class="fas fa-map-marker-alt"></i> University of Education, Lahore</p>
+            <p class="timeline-desc">Currently enrolled in the 5th Semester of BSIT under the Post ADP lateral entry program. Building on advanced IT concepts including software engineering, networking, and database systems.</p>
+          </div>
+        </div>
+
+        <!-- ADP -->
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="badge">Completed</span>
+              <span class="timeline-date">2023 – 2025</span>
+            </div>
+            <h3>ADP – Associate Degree Program in Computer Science</h3>
+            <p class="timeline-institution"><i class="fas fa-map-marker-alt"></i> Minhaj University, Lahore</p>
+            <p class="timeline-desc">Studied core computer science subjects including Data Structures, Algorithms, Web Development, Database Management, and Programming Languages (C, C++, Python, Java, HTML).</p>
+            <div class="edu-tags">
+              <span class="badge">Data Structures</span>
+              <span class="badge">Algorithms</span>
+              <span class="badge">Web Development</span>
+              <span class="badge">Database Management</span>
+              <span class="badge">Python · Java · C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ICS -->
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-school"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="badge">Completed</span>
+              <span class="timeline-date">2021 – 2023</span>
+            </div>
+            <h3>Intermediate – ICS (Computer Science)</h3>
+            <p class="timeline-institution"><i class="fas fa-map-marker-alt"></i> Model Town Boys College, Lahore</p>
+            <p class="timeline-desc">Focused on Mathematics, Physics, and Computer Science. Built a strong analytical foundation that drives my technical problem-solving approach.</p>
+          </div>
+        </div>
+
+        <!-- Matric -->
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-book-open"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="badge">Completed</span>
+              <span class="timeline-date">2021</span>
+            </div>
+            <h3>Matriculation – Science Stream</h3>
+            <p class="timeline-institution"><i class="fas fa-map-marker-alt"></i> Muslim Grammar School, Lahore</p>
+            <p class="timeline-desc">Completed secondary education with a focus on Science subjects, laying the groundwork for higher studies in Computer Science and IT.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="content-section">
+      <h2>Professional Experience</h2>
+      <p class="section-subtitle">My hands-on career journey across e-commerce, account management, and digital marketing.</p>
+
+      <div class="timeline">
+
+        <!-- Amazon FBM -->
+        <div class="timeline-item">
+          <div class="timeline-icon exp-icon"><i class="fab fa-amazon"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="badge info">Current</span>
+              <span class="timeline-date">Jan 2024 – Present</span>
+            </div>
+            <h3>Amazon FBM Dropshipping – Self-Employed</h3>
+            <p class="timeline-institution"><i class="fas fa-globe"></i> Amazon Seller Central (FBM)</p>
+            <ul class="timeline-bullets">
+              <li>Managing end-to-end Amazon dropshipping focused on eco-friendly product niches</li>
+              <li>Handling Seller Central operations: inventory management, order processing, returns</li>
+              <li>Optimizing product listings to increase visibility, ranking, and conversion rates</li>
+              <li>Conducting product hunting to identify trending and high-profit opportunities</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ecomwhizz -->
+        <div class="timeline-item">
+          <div class="timeline-icon exp-icon"><i class="fas fa-chart-bar"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="badge">Past Role</span>
+              <span class="timeline-date">Aug 2023 – Nov 2023</span>
+            </div>
+            <h3>Account Manager – Ecomwhizz</h3>
+            <p class="timeline-institution"><i class="fas fa-building"></i> Ecomwhizz Agency</p>
+            <ul class="timeline-bullets">
+              <li>Managed e-commerce operations and full product workflow for client stores</li>
+              <li>Worked on listing optimization and in-depth product research</li>
+              <li>Assisted in improving overall store performance and sales conversion strategies</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SEO -->
+        <div class="timeline-item">
+          <div class="timeline-icon exp-icon"><i class="fas fa-search"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="badge">Ongoing</span>
+              <span class="timeline-date">2023 – Present</span>
+            </div>
+            <h3>SEO Specialist – Off-Page Optimization</h3>
+            <p class="timeline-institution"><i class="fas fa-link"></i> Freelance / Independent</p>
+            <ul class="timeline-bullets">
+              <li>Built high-quality backlinks to improve website domain authority</li>
+              <li>Conducted structured link-building campaigns for better Google SERP rankings</li>
+              <li>Developed content marketing strategies including guest posting and article submissions</li>
+              <li>Increased organic traffic through targeted off-page SEO techniques</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="content-section">
+      <h2>Resume</h2>
+      <p class="section-subtitle">Download my full CV or read my professional objective below.</p>
+
+      <div class="resume-objective-card">
+        <div class="resume-obj-header">
+          <div class="resume-icon-wrapper">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <div>
+            <h3>Professional Objective</h3>
+            <p class="resume-obj-tagline">Where Technology Meets Business</p>
+          </div>
+        </div>
+        <p class="resume-obj-text">
+          To become a professional software developer and digital entrepreneur by combining my programming skills and e-commerce expertise. I aim to contribute to innovative IT solutions, build scalable applications, and grow in both software development and online business industries.
+        </p>
+        <div class="resume-stats">
+          <div class="resume-stat">
+            <span class="stat-val">BSIT</span>
+            <span class="stat-label">University of Education</span>
+          </div>
+          <div class="resume-stat">
+            <span class="stat-val">2+ Yrs</span>
+            <span class="stat-label">Amazon FBM Experience</span>
+          </div>
+          <div class="resume-stat">
+            <span class="stat-val">5+</span>
+            <span class="stat-label">Languages &amp; Frameworks</span>
+          </div>
+          <div class="resume-stat">
+            <span class="stat-val">SEO</span>
+            <span class="stat-label">Off-Page &amp; Backlinks</span>
+          </div>
+        </div>
+        <a href="resume.pdf" class="btn primary resume-download" download>
+          <i class="fas fa-download"></i> Download Full CV / Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2>Get In Touch</h2>
+      <p class="section-subtitle">Leave a message for collaborations, freelance project queries, or consulting.</p>
+      
+      <div class="contact-layout">
+        <div class="contact-info-panel">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-card-details">
+              <h4>Direct Email</h4>
+              <a href="mailto:zeeshan1offical@gmail.com">zeeshan1offical@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-card-details">
+              <h4>Contact Number</h4>
+              <p>+92 349 6545402</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-card-details">
+              <h4>LinkedIn Network</h4>
+              <a href="https://linkedin.com/in/zeeshan-ijaz2" target="_blank" rel="noopener">linkedin.com/in/zeeshan-ijaz2</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-panel">
+          <form id="contact-form" onsubmit="handleContactSubmit(event)">
+            <div class="form-row">
+              <div class="contact-input-group">
+                <label for="contact-name">Your Full Name</label>
+                <input type="text" id="contact-name" placeholder="John Doe" required />
+              </div>
+              <div class="contact-input-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="contact-input-group">
+              <label for="contact-subject">Topic / Subject</label>
+              <input type="text" id="contact-subject" placeholder="Project collaboration request" required />
+            </div>
+            <div class="contact-input-group full-width">
+              <label for="contact-message">Message Details</label>
+              <textarea id="contact-message" placeholder="Hi Zeeshan, let's build something exciting!" required></textarea>
+            </div>
+            <button type="submit" class="btn primary full-width-btn">
+              <i class="fas fa-paper-plane"></i> Dispatch Message
+            </button>
+            <div class="form-feedback" id="form-feedback-alert"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts: Typed.js for terminal text, custom calculators for ML playground -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
