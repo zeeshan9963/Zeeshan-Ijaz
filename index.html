@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zeeshan Ijaz – Front-end Developer & AI/ML Enthusiast portfolio with glassmorphism UI, projects, and contact." />
+  <title>Zeeshan Ijaz | Front-end Developer & AI/ML Enthusiast</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1CmM6A5WnNUAaS3pn2rF5Ju+HqRin4MZ+2ynZY2w3tK/6kPYR7KEljI5x9qWs5LSt/9aLObF4a0rAMi+cq8EA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-overlay" id="pageOverlay"></div>
+
+  <header class="topbar reveal">
+    <div class="topbar-inner container">
+      <div class="brand">
+        <div class="brand-copy">
+          <span class="brand-name">Zeeshan Ijaz</span>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark / light mode">
+          <span class="mode-thumb"><span class="mode-emoji">🌙</span></span>
+        </button>
+        <a href="#contact" class="btn btn-primary">Hire Me <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#home" class="drawer-link active">Home</a>
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#skills" class="drawer-link">Skills</a>
+        <a href="#resume" class="drawer-link">Resume</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+      </nav>
+      <div class="drawer-footer">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section reveal">
+      <div class="hero-stars"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <button class="hero-badge" id="internshipToggle" type="button"><span class="hero-badge-dot"></span>Available for Internship opportunities</button>
+          <h1 class="hero-title">ZEESHAN IJAZ</h1>
+          <p class="hero-subtitle">Front-end Developer, AI/ML enthusiast, and Computer Science student. Passionate about building interactive digital solutions and bridging the gap between design aesthetics and clean code.</p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/zeeshan-ijaz2" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" class="social-icon" /></a>
+            <a href="https://github.com/zeeshan9963" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><img src="images/github.svg" alt="GitHub" class="social-icon" /></a>
+            <a href="https://www.instagram.com/kh_zeeshan._.0/" target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram"><img src="images/instagram.svg" alt="Instagram" class="social-icon" /></a>
+          </div>
+
+          <div class="hero-tech-shelf" aria-label="Technology logos">
+            <img src="images/python.svg" alt="Python" class="tech-logo" />
+            <img src="images/javascript.svg" alt="JavaScript" class="tech-logo" />
+            <img src="images/html5.svg" alt="HTML5" class="tech-logo" />
+            <img src="images/database.svg" alt="Database" class="tech-logo" />
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card"><span class="stat-value" data-target="76">0</span><span class="stat-label">GitHub Repos</span></div>
+            <div class="stat-card"><span class="stat-value" data-target="18">0</span><span class="stat-label">Featured Projects</span></div>
+            <div class="stat-card"><span class="stat-value" data-target="12">0</span><span class="stat-label">Core Tech Stacks</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card" tabindex="0">
+            <img src="profile.png" alt="Zeeshan Ijaz Profile" class="profile-img" />
+            <div class="tech-pill pill-top-left"><img src="images/python.svg" alt="Python" /><span>Python</span></div>
+            <div class="tech-pill pill-bottom-left"><img src="images/javascript.svg" alt="JavaScript" /><span>JavaScript</span></div>
+            <div class="tech-pill pill-bottom-right"><img src="images/tensorflow.svg" alt="TensorFlow" /><span>TensorFlow</span></div>
+          </div>
+          <div class="profile-tech-row">
+            <img src="images/python.svg" alt="Python" />
+            <img src="images/javascript.svg" alt="JavaScript" />
+            <img src="images/html5.svg" alt="HTML5" />
+            <img src="images/database.svg" alt="Database" />
+          </div>
+          <div class="floating-icon fi-1"><div class="fi-inner"></div></div>
+          <div class="floating-icon fi-2 small"><div class="fi-inner"></div></div>
+          <div class="floating-icon fi-3"><div class="fi-inner"></div></div>
+          <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><span>Scroll</span><i class="fas fa-chevron-down"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section reveal">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Engineering the Future, <span class="gradient">One Algorithm at a Time</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>I’m Zeeshan Ijaz, a passionate Information Technology student focused on Software Development, AI/ML, and modern Web Technologies. I enjoy building interactive digital solutions, learning emerging technologies, and improving my problem-solving skills through real-world projects.</p>
+            <p>Currently expanding my expertise in full-stack development, Python, Java, Android development, and cloud computing while actively seeking internships and collaborative projects to grow professionally.</p>
+            <div class="badge-rotator"><span>Problem Solver</span></div>
+          </div>
+          <div class="about-cards">
+            <article class="info-card"><div class="info-icon"><i class="fas fa-graduation-cap"></i></div><h3>Education</h3><p>Associate Degree in Computer Science from Minhaj University Lahore (2023-2025). Bachelors in Information Technology (2025-Continued) at University of Education Lahore.</p><span class="info-tag">BS IT Continued</span></article>
+            <article class="info-card"><div class="info-icon"><i class="fas fa-bullseye"></i></div><h3>Objective</h3><p>Exploring the future of technology through continuous learning, software development, and AI-driven innovation while preparing to contribute professionally through internship opportunities.</p><span class="info-tag">Internship Ready</span></article>
+            <article class="info-card"><div class="info-icon"><i class="fas fa-map-marker-alt"></i></div><h3>Location</h3><p>Based in Lahore, Pakistan. Open to hybrid, onsite, and remote opportunities.</p><span class="info-tag">Lahore, Pakistan</span></article>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section reveal">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><div class="skill-card-title"><i class="fas fa-laptop-code"></i><span>Front-End & Web Development</span></div><div class="skill-line-wrap"><div class="skill-header"><span>HTML5</span><span>70%</span></div><div class="skill-line"><div class="skill-fill" data-width="70%"></div></div></div><div class="skill-line-wrap"><div class="skill-header"><span>CSS3</span><span>70%</span></div><div class="skill-line"><div class="skill-fill" data-width="70%"></div></div></div><div class="skill-line-wrap"><div class="skill-header"><span>JavaScript</span><span>40%</span></div><div class="skill-line"><div class="skill-fill" data-width="40%"></div></div></div><div class="tag-list"><span class="tag-pill">HTML5</span><span class="tag-pill">CSS3</span><span class="tag-pill">JavaScript ES6</span><span class="tag-pill">Responsive</span></div></article>
+          <article class="skill-card reveal"><div class="skill-card-title"><i class="fas fa-gears"></i><span>Programming & Development Tools</span></div><div class="skill-line-wrap"><div class="skill-header"><span>Git/GitHub</span><span>70%</span></div><div class="skill-line"><div class="skill-fill" data-width="70%"></div></div></div><div class="skill-line-wrap"><div class="skill-header"><span>SQL Databases</span><span>40%</span></div><div class="skill-line"><div class="skill-fill" data-width="40%"></div></div></div><div class="skill-line-wrap"><div class="skill-header"><span>Selenium Web Automation</span><span>70%</span></div><div class="skill-line"><div class="skill-fill" data-width="70%"></div></div></div><div class="tag-list"><span class="tag-pill">Git</span><span class="tag-pill">GitHub</span><span class="tag-pill">SQL</span><span class="tag-pill">Selenium</span><span class="tag-pill">VS Code</span></div></article>
+          <article class="skill-card reveal"><div class="skill-card-title"><i class="fas fa-robot"></i><span>Data Science & Machine Learning</span></div><div class="skill-line-wrap"><div class="skill-header"><span>Python</span><span>70%</span></div><div class="skill-line"><div class="skill-fill" data-width="70%"></div></div></div><div class="skill-line-wrap"><div class="skill-header"><span>Data Analysis</span><span>70%</span></div><div class="skill-line"><div class="skill-fill" data-width="70%"></div></div></div><div class="skill-line-wrap"><div class="skill-header"><span>Machine Learning</span><span>40%</span></div><div class="skill-line"><div class="skill-fill" data-width="40%"></div></div></div><div class="tag-list"><span class="tag-pill">Python</span><span class="tag-pill">Pandas</span><span class="tag-pill">NumPy</span><span class="tag-pill">Firebase</span><span class="tag-pill">Supabase</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section reveal">
+      <div class="container">
+        <div class="section-head"><span class="section-label">Portfolio</span><h2 class="section-title">Portfolio <span class="gradient">Showcase</span></h2></div>
+        <div class="projects-top">
+          <div class="project-switch">
+            <button class="switch-btn active" type="button" data-view="projects"><i class="fas fa-th-large"></i> Projects</button>
+            <button class="switch-btn" type="button" data-view="tech"><i class="fas fa-layer-group"></i> Tech Stack</button>
+          </div>
+          <div class="filter-tabs" role="tablist"><button class="tab-btn active" data-filter="all">All</button><button class="tab-btn" data-filter="web">Web</button><button class="tab-btn" data-filter="javascript">JavaScript</button><button class="tab-btn" data-filter="python">Python</button><button class="tab-btn" data-filter="system">Systems</button></div>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="web javascript"><div class="project-media"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="SubTrack Dashboard screenshot"></div><div class="project-content"><h3>SubTrack – Subscription Tracker</h3><p>A premium SaaS web app that tracks user subscriptions, visualizes spending with interactive charts, sends budget alerts, and displays renewal dates on a dynamic calendar.</p><div class="tag-list project-tags"><span class="tag-pill">JavaScript</span><span class="tag-pill">Supabase</span><span class="tag-pill">Chart.js</span></div><div class="project-actions"><a href="#" class="project-btn"><i class="fab fa-github"></i> View Source</a><a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></article>
+          <article class="project-card reveal" data-category="web javascript"><div class="project-media"><img src="https://images.unsplash.com/photo-1518779552985-9b45bfddabfc?auto=format&fit=crop&w=1200&q=80" alt="SkyGlass weather dashboard screenshot"></div><div class="project-content"><h3>SkyGlass – Weather Dashboard</h3><p>A futuristic glassmorphism weather dashboard with live conditions, air quality data, hourly forecast charts, animated weather backgrounds, and geolocation support.</p><div class="tag-list project-tags"><span class="tag-pill">JavaScript</span><span class="tag-pill">HTML/CSS</span><span class="tag-pill">Chart.js</span></div><div class="project-actions"><a href="#" class="project-btn"><i class="fab fa-github"></i> View Source</a><a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></article>
+          <article class="project-card reveal" data-category="python"><div class="project-media"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="PDF Toolkit screenshot"></div><div class="project-content"><h3>PDF Toolkit</h3><p>A Python-based toolkit for merging, splitting, compressing, and encrypting PDF files securely and quickly.</p><div class="tag-list project-tags"><span class="tag-pill">Python</span><span class="tag-pill">PyPDF</span><span class="tag-pill">CLI</span></div><div class="project-actions"><a href="#" class="project-btn"><i class="fab fa-github"></i> View Source</a></div></div></article>
+          <article class="project-card reveal" data-category="system"><div class="project-media"><img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1e?auto=format&fit=crop&w=1200&q=80" alt="Virtual Disk VHD screenshot"></div><div class="project-content"><h3>Virtual Disk VHD Project</h3><p>Created a Windows Virtual Hard Disk (VHD/VHDX) using Disk Management. Built, initialized, formatted, and stored data securely inside a virtual disk container.</p><div class="tag-list project-tags"><span class="tag-pill">Windows</span><span class="tag-pill">VHD</span><span class="tag-pill">Disk Management</span></div><div class="project-actions"><a href="#" class="project-btn"><i class="fas fa-file-alt"></i> Lab Documentation</a></div></div></article>
+          <article class="project-card reveal" data-category="web javascript"><div class="project-media"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Portfolio website screenshot"></div><div class="project-content"><h3>Portfolio Website</h3><p>Personal portfolio website showcasing projects and skills.</p><div class="tag-list project-tags"><span class="tag-pill">HTML</span><span class="tag-pill">CSS</span></div><div class="project-actions"><a href="https://github.com/zeeshan9963/Zeeshan_Ijaz_portfolio" class="project-btn" target="_blank"><i class="fab fa-github"></i> View Source</a><a href="https://zeeshan-ijaz.vercel.app/" class="project-btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></article>
+        </div>
+
+        <div class="tech-grid hidden">
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/python.svg" alt="Python" /></div><h3>Python</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/java.svg" alt="Java" /></div><h3>Java</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/javascript.svg" alt="JavaScript" /></div><h3>JavaScript</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/html5.svg" alt="HTML5" /></div><h3>HTML5</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/css3.svg" alt="CSS3" /></div><h3>CSS3</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/database.svg" alt="SQL Databases" /></div><h3>SQL Databases</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/git.svg" alt="Git / GitHub" /></div><h3>Git / GitHub</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/selenium.svg" alt="Selenium" /></div><h3>Selenium</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/pandas.svg" alt="Pandas & NumPy" /></div><h3>Pandas & NumPy</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/firebase.svg" alt="Firebase" /></div><h3>Firebase</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/supabase.svg" alt="Supabase" /></div><h3>Supabase</h3></article>
+          <article class="tech-card reveal"><div class="tech-card-icon"><img src="images/vscode.svg" alt="VS Code" /></div><h3>VS Code</h3></article>
+        </div>
+      </div>
+    </section>
+
+  <div class="badge-modal-overlay hidden" id="badgeModalOverlay"></div>
+  <div class="badge-modal hidden" id="badgeModal" role="dialog" aria-modal="true" aria-labelledby="badgeModalTitle">
+    <button class="modal-close" id="badgeModalClose" aria-label="Close internship details"><i class="fas fa-times"></i></button>
+    <h2 id="badgeModalTitle">Internship Opportunities</h2>
+    <p>Currently seeking internship roles in front-end development, AI/ML, and software engineering. I am available for projects that involve modern web UIs, responsive design, Python automation, and data-driven solutions.</p>
+    <ul class="badge-modal-list">
+      <li>Frontend development with React, JavaScript, HTML5, and CSS3</li>
+      <li>AI/ML prototyping and Python-driven data workflows</li>
+      <li>Hands-on collaboration using Git, GitHub, and agile teamwork</li>
+      <li>Building polished interfaces with glassmorphism and motion</li>
+    </ul>
+    <div class="modal-actions">
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+      <button class="btn btn-ghost" id="badgeModalDismiss" type="button">Close</button>
+    </div>
+  </div>
+
+    <section id="resume" class="section resume-section reveal">
+      <div class="container">
+        <div class="section-head"><span class="section-label">Academic & Technical Journey</span><h2 class="section-title">Experience & Education</h2></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-year">2025 – Present</span><h3>Bachelors in Information Technology</h3><p class="timeline-meta">University of Education Lahore</p><p>Continuing higher studies in Information Technology with a focus on software development, cloud services, mobile apps, and systems design.</p></article>
+          <article class="timeline-item reveal"><span class="timeline-year">2023 – 2025</span><h3>Associate Degree in Computer Science</h3><p class="timeline-meta">Minhaj University Lahore</p><p>Completed foundational studies covering database systems, object-oriented programming (Java/Python), software engineering basics, and data structures.</p></article>
+          <article class="timeline-item reveal"><span class="timeline-year">2025</span><h3>VHD Virtual Disk Lab Project</h3><p class="timeline-meta">University of Education Lahore</p><p>Designed and built a Windows VHD/VHDX virtual disk using Disk Management. Configured disk initialization, volume creation, formatting, and data storage inside a single virtual container.</p></article>
+        </div>
+        <div class="resume-cta"><a href="resume.pdf" class="btn btn-primary">Download Full Resume</a></div>
+      </div>
+    </section>
+    
+
+    <section id="contact" class="section contact-section reveal">
+      <div class="container">
+        <div class="section-head"><span class="section-label">Get In Touch</span><h2 class="section-title">Let's Engineer The Future</h2><p class="section-copy">I am actively seeking software engineering and front-end development internships or collaborative projects. Whether you have an exciting opportunity, a project to collaborate on, or just want to connect, feel free to reach out!</p></div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <article class="contact-card reveal"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p>zeeshanofficail768@gmail.com</p></div></article>
+            <article class="contact-card reveal"><div class="contact-icon"><i class="fab fa-linkedin-in"></i></div><div><h4>LinkedIn</h4><p><a href="https://www.linkedin.com/in/zeeshan-ijaz2" target="_blank" rel="noreferrer">linkedin.com/in/zeeshan-ijaz2</a></p></div></article>
+            <article class="contact-card reveal"><div class="contact-icon"><i class="fab fa-github"></i></div><div><h4>GitHub</h4><p><a href="https://github.com/zeeshan9963" target="_blank" rel="noreferrer">github.com/zeeshan9963</a></p></div></article>
+            <article class="contact-card reveal"><div class="contact-icon"><i class="fas fa-phone-alt"></i></div><div><h4>Phone</h4><p>+92 496 545402</p></div></article>
+          </div>
+          <form class="contact-form reveal" action="#" method="post">
+            <div class="form-row"><label for="fullName">Full Name</label><input id="fullName" type="text" placeholder="Enter your name" required /></div>
+            <div class="form-row"><label for="emailAddress">Email Address</label><input id="emailAddress" type="email" placeholder="your.email@example.com" required /></div>
+            <div class="form-row"><label for="message">Message</label><textarea id="message" rows="6" placeholder="Tell me about your opportunity..."></textarea></div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer reveal">
+    <div class="container footer-grid">
+      <div class="footer-brand"><div class="brand-mark footer-mark">ZI</div><div><p>Zeeshan Ijaz</p><span>Engineered for the Intelligence Era.</span></div></div>
+      <p class="footer-copy">© 2026 Zeeshan Ijaz. Engineered for the Intelligence Era.</p>
+      <div class="footer-links"><a href="https://github.com/zeeshan9963" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/zeeshan-ijaz2" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com/kh_zeeshan._.0/" target="_blank" rel="noreferrer">Instagram</a><a href="resume.pdf" download>Resume</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
